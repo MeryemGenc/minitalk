@@ -50,6 +50,3 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-/* SIGUSR1: 1 bit için
- * SIGUSR2: 0 bit için
- * pause(): sinyal gelene kadar bekletir.  */
