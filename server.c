@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 	pid = getpid();
 	ft_putstr_fd("Proccess ID: ", 1);
 	ft_putnbr_fd(pid, 1);
-	ft_putstr_fd("\nWaiting for message: \n", 1);
+	ft_putstr_fd("\nWaiting for message...", 1);
 	while (argc == 1)
 	{
 		signal(SIGUSR1, handler);
@@ -50,3 +50,6 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
+/* SIGUSR1: 1 bit için
+ * SIGUSR2: 0 bit için
+ * pause(): sinyal gelene kadar bekletir.  */
